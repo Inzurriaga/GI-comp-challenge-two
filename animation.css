@@ -1,0 +1,76 @@
+/* bar graph */
+@keyframes sun {
+  0% {height: 0px;}
+  100% {height: 10px;}
+}
+
+@keyframes mon {
+  0% {height: 0px;}
+  100% {height: 105px;}
+}
+
+@keyframes tues {
+  0% {height: 0px;}
+  100% {height: 115px;}
+}
+
+@keyframes wednes {
+  0% {height: 0px;}
+  100% {height: 120px;}
+}
+
+@keyframes thur {
+  0% {height: 0px;}
+  100% {height: 70px;}
+}
+
+@keyframes fri {
+  0% {height: 0px;}
+  100% {height: 105px;}
+}
+
+@keyframes sat {
+  0% {height: 0px;}
+  100% {height: 60px;}
+}
+
+
+/* cirlce */
+@keyframes progressone {
+  from {
+    stroke-dashoffset: 339.292;
+  }
+  to {
+    stroke-dashoffset: 75;
+  }
+}
+
+@keyframes progresstwo {
+  from {
+    stroke-dashoffset: 339.292;
+  }
+  to {
+    stroke-dashoffset: 210;
+  }
+}
+
+@keyframes progressthree {
+  from {
+    stroke-dashoffset: 339.292;
+  }
+  to {
+    stroke-dashoffset: 270;
+  }
+}
+
+@keyframes hello {
+  0% {
+    opacity: 0.0;
+  }
+  99% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}

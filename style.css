@@ -1,0 +1,764 @@
+*:focus {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows:  62px 225px 450px 1fr;
+  grid-template-areas:
+  "sidebar search"
+  "sidebar customer"
+  "sidebar data"
+  "sidebar job";
+}
+
+.search-display-cust {
+  display: none;
+}
+
+.search-display-side {
+  display: none;
+  width: 50px;
+  float: left;
+}
+
+#username {
+  display: none;
+}
+
+/* side bar */
+nav {
+  border-top: 2px solid #2E3A49;
+  padding: 0px 10px 20px 0px;
+}
+
+#profile-pic {
+  border-radius: 100%;
+  width: 100px;
+  margin: 20px 55px 10px 55px;
+}
+
+p {
+  color: #71788B;
+  margin-left: 15px;
+  margin-bottom: 0px;
+
+}
+
+a, label{
+  display: block;
+  text-decoration: none;
+  color: #8E96A9;
+  padding: 10PX 15px;
+}
+
+a:hover {
+  color: #FFFFFF;
+  background-color: #2E3A49;
+  border-left: 2px solid #05AAE8;
+}
+
+#side-bar {
+  background-color: #354052;
+  grid-row: span 4;
+  grid-area: sidebar;
+}
+
+#username {
+  text-align: center;
+  margin: 5px 0px 25px 0px;
+  color: #8E96A9;
+}
+
+.nav-svg {
+  width: 25px;
+  border-radius: 0;
+  margin: 10px 10px -5px 0px;
+}
+
+/* search bar */ 
+#search-svg, #search-svg:hover {
+  border: none;
+  background-color: none;
+}
+
+#search-bar {
+  display: grid;
+  background-color: #FFFFFF;
+  grid-template-columns: 5.45% 5.45% 72.76% 5.45% 5.45% 5.45%;
+  grid-area: search;
+}
+
+#search  {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-right: 2px solid #6F7D97;
+  font-size: 2em;
+}
+
+.search-nav {
+  width: 25px;
+  border-radius: 0;
+  margin: 0px;
+  border-right: 2px solid #6F7D97;
+  padding: 20px;
+}
+
+.search-nav:hover {
+  background-color: #1DA8F3;
+  fill: #FFFFFF;
+}
+
+/* customer service */
+h1 {
+  color: #7a7a7e;
+  margin-bottom: 5px;
+}
+
+#customer-service {
+  background-color: #FFFFFF;
+   border-top: 2px solid black;
+   padding-bottom: 0px;
+   grid-area: customer;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 31px;
+   grid-template-areas: 
+   "maincust buttons"
+   "custnav custnav";
+}
+
+#leftcust {
+  display: inline-block;
+  position: relative;
+  grid-area: maincust;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+#area {
+  display: inline;
+  margin-left: 20px;
+}
+
+#customer-location {
+  width: 25px;
+  margin: 0px;
+  position: absolute;
+  left: -5px;
+  top: 50px;
+}
+
+#preview {
+  display: inline;
+  color: #51c8e7;
+}
+
+#preview:hover {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+#rightcust {
+  display: inline-block;
+  position: relative;
+  grid-area: buttons;
+  padding: 60px 0px 60px 200px;
+}
+
+#the-green {
+  border: 2px solid #DBE2EA;
+  border-radius: 20PX;
+  display: inline-block;
+  width: 90px;
+  height: 32px;
+  position: relative;
+}
+
+#green-cricle {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: #73c900;
+  display: inline-block;
+  position: absolute;
+  top: 10.5px;
+  left: 7px;
+}
+
+#green-text {
+  position: absolute;
+  top: -10.5px;
+  left: 12px;
+}
+
+.customer-nav {
+  border: 2px solid #DBE2EA;
+  border-radius: 50px;
+  width: 25px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#customer-main-nav {
+  border: none;
+  padding: -10px;
+  margin-left: 60px;
+  grid-area: custnav;
+}
+
+.customer-service-nav {
+  background-color: white;
+  display: inline;
+}
+
+.customer-service-nav:hover {
+  background-color: white;
+  color: #000000;
+  border-bottom: 3px solid #05AAE8;
+  border-left: none;
+}
+
+/* data bar */
+#data {
+  background-color: #EDF2F6;
+  grid-area: data;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.data-circle-buttons {
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 2px solid #DBE2EA;
+  border-radius: 100px;
+  padding: 8px;
+  margin: 50px auto;
+  width: 225px;
+  display: block;
+}
+
+#circle-section {
+  margin-left: 60px;
+  width: 608px
+}
+
+.data-bar-buttons {
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 2px solid #DBE2EA;
+  border-radius: 100px;
+  padding: 8px;
+  margin: 50px auto;
+  width: 150px;
+  display: block;
+}
+
+#bar {
+  position: relative;
+  transform: rotateZ(180deg);
+  width: 350px;
+  margin: 75px;
+}
+
+/* job description */
+
+h2 {
+  color: #FFFFFF;
+}
+#job-title {
+  color: #FFFFFF;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#job {
+  background-color: #EDF2F6;
+  grid-area: job;
+}
+
+#job-description-article {
+  border-top: 2px solid black;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#job-description {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 4px #000000;
+  width: 40vw;
+  padding: 20px;
+  position: relative;
+}
+
+#article-header {
+  background-color: #6F7D97;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+#editbutton {
+  display: inline-block;
+  background-color: #798aa6;
+  height: 40px;
+  margin: 25px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+#spacer {
+  height: 80px;
+}
+
+#job-edit-image {
+  display: inline-block;
+  margin: 0px;
+  width: 20px;
+}
+
+#job-edit-text {
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+.job-body {
+  border-bottom: 2px solid #8E96A9;
+  padding: 30px;
+  position: relative;
+}
+
+#job-image {
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  top: 40px;
+}
+
+.job-inline {
+  display: inline-block;
+  width: 250px;
+  position: relative;
+}
+
+.job-inline2 {
+  display: inline-block;
+  width: 250px;
+  position: relative;
+  margin-left: 50px;
+}
+
+/* left portion of the job description */
+#social-media {
+  width: 350px
+}
+
+#facebook {
+    background-color: #3b5998;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+#twitter {
+  background-color: #1da1f2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 50px;
+
+}
+
+#linkedin {
+  background-color: #0073b1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.social-svg {
+  width: 35px;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.social-text {
+  vertical-align: middle;
+  display: inline;
+  color: #FFFFFF;
+}
+
+.last-svg {
+  width: 35px;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline;
+  margin: 0px;
+}
+
+.social-input {
+  width: 100%;
+  font-size: 2em;
+  border-radius: 5px;
+  border: none;
+}
+
+.social-placement {
+  display: grid;
+  grid-template-columns: 286px 65px;
+}
+
+.social-input-buttons {
+  width: 100%;
+  font-size: 2em;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+}
+
+.social-buttons {
+  height: 100%;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #00bdc4;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.social-article {
+  margin: 0px;
+}
+
+.social-text-article {
+  margin: 20px 0px;
+}
+
+#middle-social {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+
+#middle-social > h3 {
+  margin: 0px;
+}
+
+.job-text {
+  width: 175px;
+  display: inline-block;
+}
+
+/* The container */
+.newcheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.newcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.box1 {
+    position: absolute;
+    top: 5;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #f9db00;
+}
+
+.box2 {
+    position: absolute;
+    top: 5;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #00aeff;
+}
+
+.box3 {
+    position: absolute;
+    top: 5;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #ff0060;
+}
+
+.box4 {
+    position: absolute;
+    top: 5;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #00af86;
+}
+
+.box1:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box3:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box4:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.newcheck input:checked ~ .box1:after {
+    display: block;
+}
+
+.newcheck input:checked ~ .box2:after {
+    display: block;
+}
+
+.newcheck input:checked ~ .box3:after {
+    display: block;
+}
+
+.newcheck input:checked ~ .box4:after {
+    display: block;
+}
+
+.newcheck .box1:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.newcheck .box2:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.newcheck .box3:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.newcheck .box4:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1380px) {
+  body {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows:  62px 225px 850px 1fr;
+  grid-template-areas:
+  "sidebar search"
+  "sidebar customer"
+  "sidebar data"
+  "sidebar job";
+}
+  #data {
+  background-color: #EDF2F6;
+  grid-area: data;
+  border-top: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#circle-section {
+  width: 608px;
+  margin: 0px;
+  display: 
+}
+
+#bar-section {
+  margin-left: 10px;
+}
+
+}
+
+@media screen and (max-width: 1160px) {
+
+ body {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  grid-template-rows:  62px 425px 850px 1fr;
+  grid-template-areas:
+  "sidebar search"
+  "sidebar customer"
+  "sidebar data"
+  "sidebar job";
+}
+
+  #customer-service {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 31px;
+   grid-template-areas: 
+   "maincust"
+   "buttons"
+   "custnav";
+}
+
+#leftcust {
+  width: 380px;
+  display: inline-block;
+  position: relative;
+  grid-area: maincust;
+  margin: 40px auto;
+}
+
+#rightcust {
+  width: 280px;
+  margin: 40px auto;
+  display: inline-block;
+  position: relative;
+  grid-area: buttons;
+  padding: 0px 0px 60px 0px;
+}
+
+#customer-main-nav {
+  border: none;
+  padding: -10px;
+  margin: 0px auto;
+  grid-area: custnav;
+}
+
+#job-description-article {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#job-description {
+  width: 60vw;
+}
+
+#social-media {
+  width: 60vw;
+}
+
+.social-placement {
+  display: grid;
+  grid-template-columns: 1fr 65px;
+}
+
+#facebook {
+  margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 1070px) {
+   body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  150px 62px 425px 850px 1fr;
+  grid-template-areas:
+  "sidebar"
+  "search"
+  "customer"
+  "data"
+  "job";
+}
+
+#profile-pic {
+  float: right;
+}
+.newcheck {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+#side-bar {
+  position: relative;
+}
+
+#search-bar {
+  display: grid;
+  background-color: #FFFFFF;
+  grid-template-columns:65px 65px 1fr 65px 65px 65px;
+  grid-area: search;
+}
+
+.search-display-cust {
+  display: block;
+  grid-area: custnav;
+  position: absolute;
+  width: 60px;
+  left: 45%;
+  top: 550px;
+}
+
+.search-display-side {
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+}

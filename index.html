@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>/comp 2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="data.css">
+  <link rel="stylesheet" type="text/css" href="animation.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <!-- side bar -->
+  <section id="side-bar">
+    <!-- profile picture -->
+    <img id="profile-pic" src="images/funnyface.jpg" alt="profile picture">
+    <p id="username">name of the user</p>
+    <img class="search-display-side" src="svg2/hammenu.svg">
+    <!-- main nav -->
+    <nav>
+      <p>Main</p>
+      <a href="#"><img class="nav-svg" src="svg/house.svg">HOME</a>
+      <a href="#"><img class="nav-svg" src="svg/suite.svg">JOBS</a>
+      <a href="#"><img class="nav-svg" src="svg/paper.svg">RESUMES</a>
+      <a href="#"><img class="nav-svg" src="svg/clip.svg">TASKS</a>
+      <a href="#"><img class="nav-svg" src="svg/calendar.svg">CALENDER</a>
+    </nav>
+    <!-- admin nav -->
+    <nav>
+      <p>Admin</p>
+      <a href="#"><img class="nav-svg" src="svg/users.svg">USERS</a>
+      <a href="#"><img class="nav-svg" src="svg/location.svg">LOCATIONS</a>
+      <a href="#"><img class="nav-svg" src="svg/network.svg">WORKFLOWS</a>
+      <a href="#"><img class="nav-svg" src="svg/board.svg">JOB BOARDS</a>
+      <a href="#"><img class="nav-svg" src="svg/social.svg">SOCIAL</a>
+    </nav>
+    <!-- categories nav -->
+    <nav>
+      <p>Categories</p>
+      <label class="newcheck">
+        <input class="chechinput" type="checkbox"><span class="box1"></span>Administrative
+      </label>
+      <label class="newcheck">
+        <input class="checkinput" type="checkbox"><span class="box2"></span>Design</label>
+      <label class="newcheck">
+        <input class="checkinput" type="checkbox"><span class="box3"></span>Executive</label>
+      <label class="newcheck">
+        <input class="checkinput" type="checkbox"><span class="box4"></span>Human Resources</label>
+    </nav>
+  </section>
+  <!-- search bar -->
+  <section id="search-bar">
+    <img class="search-nav" src="svg2/hammenu.svg">
+    <img id="search-svg" class="search-nav" src="svg/search.svg">
+    <input id="search" type="text" placeholder="Search for a job, task or resume">
+    <img class="search-nav" src="svg2/adduser.svg">
+    <img class="search-nav" src="svg2/addpage.svg">
+    <img class="search-nav" src="svg2/menu.svg">
+  </section>
+  <!-- customer service -->
+  <section id="customer-service">
+      <div class="top-customer" id="leftcust">
+        <h1>Customer Service Representative</h1>
+        <div>
+          <img id="customer-location" src="svg/location.svg"><p id="area">San Francisco, CA -</p>
+          <a id="preview">Preview this post</a>
+        </div>
+      </div>
+      <div class="top-customer" id="rightcust">
+        <div id="the-green">
+          <div id="green-cricle"></div>
+          <p id="green-text">OPEN</p>
+        </div>
+        <img class="customer-nav" src="svg2/save.svg">
+        <img class="customer-nav" src="svg2/edit.svg">
+        <img class="customer-nav" src="svg2/trash.svg">
+      </div>
+    <nav id="customer-main-nav">
+      <a class="customer-service-nav" href="">SUMMARY</a>
+      <a class="customer-service-nav" href="">APPLICANTS</a>
+      <a class="customer-service-nav" href="">JOB BOARD</a>
+      <a class="customer-service-nav" href="">INTERVIEWS</a>
+      <a class="customer-service-nav" href="">ACTIVITY</a>
+      <a class="customer-service-nav" href="">BROADCAST</a>
+      <a class="customer-service-nav" href="">NOTIFICATION</a>
+    </nav>
+    <img class="search-display-cust" src="svg2/hammenu.svg">
+  </section>
+  <!-- data -->
+  <section id="data">
+  <!-- radial progress circle one -->
+    <article id="circle-section">
+        <div class="circleplacement">
+          <svg class="circle" width="180" height="180" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+            <circle class="progresspresent" cx="60" cy="60" r="54" fill="none" stroke="#00b5c0" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="75" stroke-linecap="round"/>
+            <circle class="progressanimation1" cx="60" cy="60" r="54" fill="none" stroke="#00b5c0" stroke-width="12"  stroke-linecap="round" />
+          </svg>
+          <p class="cricle-numbers">3,154</p>
+          <p class="cricle-numbers2">APPLICANTS</p>
+        </div>
+      <!-- circle two -->
+        <div class="circleplacement">
+          <svg class="circle" width="180" height="180" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+            <circle class="progresspresent" cx="60" cy="60" r="54" fill="none" stroke="#00a7fd" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="210" stroke-linecap="round"/>
+            <circle class="progressanimation2" cx="60" cy="60" r="54" fill="none" stroke="#00a7fd" stroke-width="12"  stroke-linecap="round" />
+          </svg>
+          <p class="cricle-numbers">1,546</p>
+          <p class="cricle-numbers2">INTERVIEWS</p>
+        </div>
+      <!-- circle three -->
+        <div class="circleplacement">
+          <svg class="circle" width="180" height="180" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="#e6e6e6" stroke-width="12" />
+            <circle class="progresspresent" cx="60" cy="60" r="54" fill="none" stroke="#c35db9" stroke-width="12" stroke-dasharray="339.292" stroke-dashoffset="270" stroke-linecap="round"/>
+            <circle class="progressanimation3" cx="60" cy="60" r="54" fill="none" stroke="#c35db9" stroke-width="12"  stroke-linecap="round" />
+          </svg>
+          <p class="cricle-numbers">912</p>
+          <p class="cricle-numbers2">FORWARDS</p>
+        </div>
+      <p class="data-circle-buttons">TOTALS - Out of 5,231 views</p>
+    </article>
+      <!-- progress bar -->
+    <article id="bar-section">
+      <div id="bar">
+        <ul id="bar-number">
+          <li class="bar-numbers">500</li>
+          <li class="bar-numbers">400</li>
+          <li class="bar-numbers">300</li>
+          <li class="bar-numbers">200</li>
+          <li class="bar-numbers">100</li>
+          <li class="bar-numbers">0</li>
+        </ul>
+        <div id="background-bar">
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"></div>
+          <div class="background-bar"> </div>
+          <div class="background-bar"></div> 
+          <div class="background-bar"></div> 
+        </div>
+        <div id="animated-bar">
+          <div id="b1"></div>
+          <div id="b2"></div>
+          <div id="b3"></div>
+          <div id="b4"></div>
+          <div id="b5"></div>
+          <div id="b6"></div>
+           <div id="b7"></div>
+           <div id="b8"></div>
+           <div id="b9"></div>
+           <div id="b10"></div>
+           <div id="b11"></div>
+           <div id="b12"></div>
+           <div id="b13"></div>
+           <div id="b14"></div>
+        </div>
+        <ul id="bar-day">
+          <li class="inline">S</li>
+          <li class="inline">M</li>
+          <li class="inline">T</li>
+          <li class="inline">W</li>
+          <li class="inline">T</li>
+          <li class="inline">F</li>
+          <li class="inline">S</li>
+          <li class="inline">S</li>
+          <li class="inline">M</li>
+          <li class="inline">T</li>
+          <li class="inline">W</li>
+          <li class="inline">T</li>
+          <li class="inline">F</li>
+          <li class="inline">S</li>
+        </ul>
+      </div>
+      <p class="data-bar-buttons">APPLICANTS/DAY</p>
+    </article>
+  </section>
+  <section id="job">
+    <!-- job discription -->
+    <article id="job-description-article">
+      <!-- job description article -->
+        <article id="job-description">
+          <div id="article-header">
+            <h2 id="job-title">Job Description</h2>
+            <div id="editbutton">
+              <img id="job-edit-image" src="svg2/edit.svg">
+              <p id="job-edit-text">EDIT</p>
+            </div>
+          </div>
+          <div id="spacer">
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+            <h3>POSITTION TITLE</h3>
+          </div>
+            <p class="job-inline">Customer Service Representative</p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+            <h3>LOCAITON</h3>
+          </div>
+            <p class="job-inline">San Francisco</p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+            <h3>EMPLOYMENT TYPE</h3>
+          </div>
+            <p class="job-inline">Full-time</p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+            <h3>EXPERIENCE</h3>
+          </div>
+            <p class="job-inline">Mid-level</p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+              <h3>STATUS</h3>
+            </div>
+            <p class="job-inline">Open</p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+              <h3>DESCRIPTION</h3>
+            </div>
+            <p class="job-inline">hello world how are you doing this is the best thing to ever happne to me because im so happy </p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+              <h3>HIRING LEAD</h3>
+            </div>
+            <img id="job-image" src="images/funnyface.jpg">
+            <p class="job-inline2">Tom Tizzy</p>
+          </div>
+          <div class="job-body">
+            <div class="job-text">
+              <h3>APPROVED SALARY</h3>
+            </div>
+            <p class="job-inline">$58,000</p>
+          </div>
+        </article>
+        <!-- left side of the job descrip social media -->
+        <article id="social-media">
+          <div id="facebook">
+            <img class="social-svg" src="svg2/facebook.svg">
+            <p class="social-text">post to facebook</p>
+          </div>
+          <div id="twitter">
+            <img class="social-svg" src="svg2/twitter.svg">
+            <p class="social-text">tweet this job</p>
+          </div>
+          <div id="linkedin">
+            <img class="social-svg" src="svg2/linkedin.svg">
+            <p class="social-text">post to linkedin</p>
+          </div>
+          <!-- first article -->
+          <article class="social-article">
+            <h3>
+              <img class="last-svg" src="svg2/globe.svg">
+              Link to this job
+            </h3>
+            <p class="social-text-article">lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</p>
+            <div class="social-placement">
+              <input class="social-input-buttons">
+              <button class="social-buttons">COPY</button>
+            </div>
+          </article>
+          <!-- second article -->
+          <article id="middle-social">
+            <h3>
+              <img class="last-svg" src="svg2/webpage.svg">
+              Use the Button Widget
+            </h3>
+            <p class="social-text-article">This widget embeds the buttons for sharing the job for submittinh a resume on your website</p>
+            <div class="social-placement">
+              <input class="social-input-buttons">
+              <button class="social-buttons">COPY</button>
+            </div>
+          </article>
+          <!-- third article -->
+          <article class="social-article">
+            <h3>
+              <img class="last-svg" src="svg2/send.svg">
+              Upload Resumes by Email
+            </h3>
+            <p class="social-text-article">you can automatically upload multiples resumes to this job by emailing the address below.</p>
+            <input class="social-input">
+          </article>
+        </article>
+    </article>
+  </section>
+</body>
+</html>
